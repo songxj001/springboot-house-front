@@ -1,0 +1,40 @@
+server:
+  port: ${port:8761}
+  jsp-servlet:
+          init-parameters:
+            development: true
+spring:
+  application:
+    name: springboot-house-front
+  mvc:
+    view:
+        prefix: /WEB-INF/JSP/
+        suffix: .jsp
+  datasource:
+    url: jdbc:mysql://rm-2zebj150s7a6v277zqo.mysql.rds.aliyuncs.com:3306/1708bone?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
+    password: 1708bROOT
+    #redis����
+  redis:
+    #���ݿ�����
+    database: 0
+    #��������ַ
+    host: 127.0.0.1
+    #���������Ӷ˿�
+    port: 6379
+    #��������
+    password:
+    #���ӳ�
+    pool:
+    #�������������ֵ��ʾû�����ƣ�
+      max-active: 8
+      #��������ȴ�ʱ�䣨��ֵ��ʾû�����ƣ�
+      max-wait: 1
+      #����������
+      max-idle: 8
+      #��С��������
+      min-idle: 0
+    #���ӳ�ʱʱ�䣨���룩
+    timeout: 0
+
