@@ -23,7 +23,6 @@ public class FootController {
     @RequestMapping(value = "footinsert")
     @ResponseBody
     public  void footinsert(String uid, String hid,String type) {
-
          Foot foot  =  new Foot();
 
         foot.setId(UUID.randomUUID().toString().replaceAll("-",""));
