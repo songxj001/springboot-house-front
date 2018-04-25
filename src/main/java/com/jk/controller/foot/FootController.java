@@ -1,3 +1,4 @@
+
 package com.jk.controller.foot;
 
 import com.jk.model.foot.Foot;
@@ -23,6 +24,7 @@ public class FootController {
     @RequestMapping(value = "footinsert")
     @ResponseBody
     public  void footinsert(String uid, String hid,String type) {
+        //ceshi==
          Foot foot  =  new Foot();
 
         foot.setId(UUID.randomUUID().toString().replaceAll("-",""));
